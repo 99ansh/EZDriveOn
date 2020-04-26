@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="77dp"
+        android:background="@drawable/round_edit_text"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Speedometer"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.anastr.speedviewlib.PointerSpeedometer
+        android:id="@+id/pointerSpeedometer"
+        android:layout_width="386dp"
+        android:layout_height="465dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sv_backgroundCircleColor="@color/mygray"
+        app:sv_indicator="NormalIndicator"
+        app:sv_indicatorColor="@color/myred"
+        app:sv_indicatorLightColor="@color/myred"
+        app:sv_speedTextSize="40dp" />
+
+    <TextView
+        android:id="@+id/avgspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="43dp"
+        android:text="AVG  100"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/maxspeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointerSpeedometer" />
+
+    <TextView
+        android:id="@+id/maxspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="56dp"
+        android:text="MAX  100"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

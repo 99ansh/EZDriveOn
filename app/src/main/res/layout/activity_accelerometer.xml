@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mygray"
+    tools:context=".accelerometer">
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="335dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="164dp"
+        android:background="@color/mypink"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/y"
+        android:layout_width="335dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="230dp"
+        android:background="@color/mygreen"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/z"
+        android:layout_width="335dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="290dp"
+        android:background="@color/myyellow"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_edit_text"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Accelerometer"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="395dp"
+
+        android:fontFamily="@font/roboto_medium"
+        android:text="Net Acceleration"
+        android:textColor="@android:color/white"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="154dp"
+        android:text="X"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="220dp"
+        android:text="Y"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="280dp"
+        android:text="Z"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+</RelativeLayout>
